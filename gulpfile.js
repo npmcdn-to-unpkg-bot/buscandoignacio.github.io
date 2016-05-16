@@ -6,8 +6,8 @@ var gulp        = require('gulp'),
     jshint      = require('gulp-jshint'),
     sass        = require('gulp-sass');  
 
-var dest    = './_dist/',
-    prod    = './_prod/',
+var dest    = './dist/',
+    prod    = './prod/',
     server  = 'http://centos.dev/sonic/buscandoignacio.github.io/';
       
 var autoprefixer_browser = [
