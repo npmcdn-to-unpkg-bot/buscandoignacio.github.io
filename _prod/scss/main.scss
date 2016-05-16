@@ -1,7 +1,14 @@
 /*** Main Stuff ***/
 
 /*** Framework ***/
+@import 'framework/variables';
+@import 'framework/font';
+@import 'framework/core';
 
 /*** Layouts ***/
-
+@import 'layouts/preloader';
 /*** Plugins ***/
+
+
+// reset
+@import 'framework/reset';
