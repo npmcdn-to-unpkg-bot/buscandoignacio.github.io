@@ -1,1 +1,36 @@
 // Header
+header{
+    background:#FFF;
+    border-bottom:2px solid $green;
+    .parent{
+        max-width: $w-desktop;
+        margin: 0 auto;
+    }
+    .logo{
+        img{
+            max-width: 111px;
+            height:auto;
+            padding:5px 0 5px 20px;
+        }
+    }
+    .menu-container{
+        height:117px;
+        display: table;
+        padding-right:20px;
+    }
+    .menu{
+        display: table-cell;
+        vertical-align:middle;
+        ul{
+            list-style: none;
+            margin:0px;
+        }
+        li{
+            margin:10px 20px;
+            display:inline-block;
+            color:$green;
+            letter-spacing:1px;
+            cursor:pointer;
+        }
+    }
+}

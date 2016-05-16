@@ -7,8 +7,13 @@
 
 /*** Layouts ***/
 @import 'layouts/preloader';
-/*** Plugins ***/
+@import 'layouts/header';
+@import 'layouts/footer';
+@import 'layouts/links';
+@import 'layouts/main';
 
+/*** Plugins ***/
+@import 'plugins/fontawesome/scss/font-awesome';
 
 // reset
 @import 'framework/reset';
