@@ -1,0 +1,24 @@
+{
+  "name": "buscandoignacio.github.io",
+  "version": "1.0.0",
+  "description": "Website dedicated to the Search of an Awesome Friend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/buscandoignacio/buscandoignacio.github.io.git"
+  },
+  "keywords": [
+    "Ignacio",
+    "Susaeta",
+    "Uruguay"
+  ],
+  "author": "BuscandoIgnacio",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/buscandoignacio/buscandoignacio.github.io/issues"
+  },
+  "homepage": "https://github.com/buscandoignacio/buscandoignacio.github.io#readme"
+}
