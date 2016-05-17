@@ -7,7 +7,7 @@
 </head>
 <body>
     <!-- Header -->
-    <header>
+    <header class="preLoader-on">
         <div class="parent">
             <div class="logo left">
                 <img src="./dist/img/ignacio.png" alt="Jose Ignacio Susaeta">
@@ -15,13 +15,13 @@
             <div class="menu-container right">
                 <div class="menu">
                     <ul>
-                        <li>
+                        <li class="menubtn" data-link="first-page">
                             Sobre Ignacio
                         </li>
-                        <li>
+                        <li class="menubtn" data-link="second-page">
                             Links con Informacion
                         </li>
-                        <li>
+                        <li class="menubtn" data-link="third-page">
                             Contacto
                         </li>
                     </ul>
@@ -30,15 +30,162 @@
         </div>
     </header>
     <!-- Main Container -->
-    <div class="main">
+    <div class="main preLoader-on">
         <div class="container">
-            <h3> Carta a Ignacio: </h3>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat aspernatur rerum nihil repudiandae accusantium earum voluptate quidem harum dolorem et quos voluptatibus accusamus unde, possimus vero delectus corporis explicabo iure!
-            </p>        
+            <!-- Main Page -->
+            <div class="first-page page" id="first-page">
+                <div class="carta">
+                    <h3> Carta a Ignacio: </h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat aspernatur rerum nihil repudiandae accusantium earum voluptate quidem harum dolorem et quos voluptatibus accusamus unde, possimus vero delectus corporis explicabo iure!
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat aspernatur rerum nihil repudiandae accusantium earum voluptate quidem harum dolorem et quos voluptatibus accusamus unde, possimus vero delectus corporis explicabo iure!
+                    </p>
+                    <p class="parent">
+                        <strong class="right">
+                            Att. Familia Susaeta
+                        </strong>
+                    </p>        
+                </div>
+                <div class="info">
+                    <h3> Informacion: </h3>
+                    <p>
+                        El joven José Ignacio salió de su casa el viernes 23. Según había informado, iría en auto a la casa de un amigo y luego se vería con su novia. Nada de eso ocurrió. El domingo apareció su auto, un Chevrolet Spark de color negro en la zona de Lagomar, motivo por el cual la Armada Nacional junto al plantel de perros de la Policía están rastrillando la zona.
+                    </p>
+                    <table border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td>
+                                APELLIDOS
+                            </td>
+                            <td>
+                                SUSAETA RODRIGUEZ
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                NOMBRES 
+                            </td>
+                            <td>
+                                José Ignacio
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                FECHA DE NACIMIENTO
+                            </td>
+                            <td>
+                                01/10/1991
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                EDAD A LA FECHA DE LA DESAPARICION
+                            </td>
+                            <td>
+                                23 años.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                FECHA DE LA DESAPARICION
+                            </td>
+                            <td>
+                                23 de enero del año 2015
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                ÚLTIMO LUGAR EN QUE SE LA VIO
+                            </td>
+                            <td>
+                                Saliendo de su casa en su auto a la hora 20:00.
+                            </td>   
+                        </tr>
+                        <tr>
+                            <td>
+                                ALTURA
+                            </td>
+                            <td>
+                                entre 1,80 y 1,85 mts.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                PESO APROXIMADO
+                            </td>
+                            <td>
+                                entre 75 y 80 Kg.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                COMPLEXIÓN FÍSICA
+                            </td>
+                            <td>
+                                Delgada.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                COLOR DE CUTIS
+                            </td>
+                            <td>
+                                Blanco.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                COLOR DE CUTIS
+                            </td>
+                            <td>
+                                Blanco.
+                            </td>
+                        </tr>                  
+                        <tr>
+                            <td>
+                                COLOR DE OJOS
+                            </td>
+                            <td>
+                                Marrones.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                TIPO Y COLOR DE CABELLO:
+                            </td>
+                            <td>
+                                Lacios, castaños oscuros
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                SEÑAS PARTICULARES (CICATRICES, TATUAJES, MARCAS, QUEMADURAS,LUNARES, ETC.)
+                            </td>
+                            <td>
+                                no posee tatuajes, cicatriz visible por una operación en la pelvis.
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="mapa">
+                        <h3>Mapa:</h3>
+                        <p>
+                            Mapa del lugar donde aparecio el Auto de Ignacio Susaeta
+                        </p>
+                        <iframe src="https://www.google.com/maps/d/u/2/embed?mid=1xe_0LEibsLuvcWfwk42xXRFj3m0" width="100%" height="480"></iframe>
+                    </div>
+                </div>
+            </div>
+            <!-- Second Page -->
+            <div class="second-page page" id="second-page">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius dolores fugit dolorem natus vel eos aspernatur nihil neque laudantium, eveniet exercitationem esse laboriosam architecto, non accusantium sed quas, odit nostrum.
+                </p>
+            </div>
+            <!-- Third Page -->
         </div>
     </div>
-    <footer>
+    <footer class="preLoader-on">
         <div class="container">
             <div class="social-container">
                 <ul>
@@ -64,19 +211,21 @@
         </div>
     </div>
     <!-- PreLoading Container -->
-    <div class="preLoader no-display">
+    <div class="preLoader">
         <div class="container">
             <div class="info">
                 <img src="./dist/img/ignacio.png" alt="Jose Ignacio Susaeta Rodriguez">
                 <h2>Éste sitio está dedicado a Ignacio Susaeta</h2>
-                <span>
+                <span id="preloaderBtn">
                     Continuar 
                 </span>
             </div>
         </div>
     </div>
     <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
     <script src="./dist/js/main.js"></script>
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-573a702c9fdcb0d8"></script>
 </body>
 <!-- Made with Love and Hope -->
 </html>

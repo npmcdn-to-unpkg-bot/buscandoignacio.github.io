@@ -34,3 +34,23 @@ header{
         }
     }
 }
+// - Tablet
+@media (max-width:$w-tablet){
+    header{
+        .left, .right{
+            float:none;
+            text-align: center;
+        }
+        .menu-container{
+            width:100%;
+        }
+        .menu{
+            width:100%;
+            ul{
+                li{
+                    display:block;
+                }
+            }
+        }
+    }
+}
