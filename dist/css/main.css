@@ -122,7 +122,9 @@ footer {
   footer a {
     color: #FFF; }
   footer ul {
-    list-style: none; }
+    list-style: none;
+    padding: 0px;
+    margin: 0px; }
   footer li {
     display: inline-block;
     margin: 0 10px; }
