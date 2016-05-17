@@ -2,17 +2,32 @@
     
     // Functions
     var loadPage = function(){
-        var $this = $(this);
+        var $this   = $(this),
+            $pages  = $('.page'),
+            $link   = $this.attr('data-link');
+        
+        // $pages.fadeOut('slow', function(){
+        //    $('#'+$link).show(); 
+        // });
+        if( !$('#'+$link).hasClass('show') ){
+            $pages.addClass('hide');
+            $pages.removeClass('show');
+            $('#'+$link).removeClass('hide').addClass('show');
+        }
         
     },
     hiddeLoader = function(){
-        var $loader = $('.preLoader');
-        $loader.fadeOut('slow', function(){
-            $('body').toggleClass('preloader-ison');
-            $('.preLoader-on').each(function(index){
-                $(this).delay(800*index).fadeTo('slow', 1);    
+        if( jQuery.isReady ){
+            var $loader = $('.preLoader');
+            $loader.fadeOut('slow', function(){
+                $('body').removeClass('preloader-ison');
+                $('.preLoader-on').each(function(index){
+                    $(this).delay(800*index).fadeTo('slow', 1);    
+                });  
             });  
-        });  
+        } else{
+            console.log('Is loading');
+        }
     };
     
     

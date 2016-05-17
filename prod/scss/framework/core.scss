@@ -21,6 +21,10 @@ html, body{
 .right{
     float:right;
 }
+img{
+    max-width: 100%;
+    height:auto;
+}
 // Responsive
 // - Tablet
 @media (max-width:$w-desktop){

@@ -13,6 +13,16 @@
     <link rel="stylesheet" href="./dist/css/main.css">
 </head>
 <body class="preloader-ison">
+    <!-- Social FB -->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.6&appId=362037023895204";
+        fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
     <!-- Header -->
     <header class="preLoader-on">
         <div class="parent">
@@ -23,12 +33,15 @@
                 <div class="menu">
                     <ul>
                         <li class="menubtn" data-link="first-page">
-                            Sobre Ignacio
+                            Inicio
                         </li>
                         <li class="menubtn" data-link="second-page">
-                            Links con Informacion
+                            Sobre Ignacio
                         </li>
                         <li class="menubtn" data-link="third-page">
+                            Links con Informacion
+                        </li>
+                        <li class="menubtn" data-link="four-page">
                             Contacto
                         </li>
                     </ul>
@@ -40,7 +53,7 @@
     <div class="main preLoader-on">
         <div class="container">
             <!-- Main Page -->
-            <div class="first-page page" id="first-page">
+            <div class="first-page page animated fadeInLeft" id="first-page">
                 <div class="carta">
                     <h3> Carta a Ignacio: </h3>
                     <p>
@@ -184,14 +197,215 @@
                 </div>
             </div>
             <!-- Second Page -->
-            <div class="second-page page" id="second-page">
+            <div class="second-page page animated fadeInRight" id="second-page">
+                <h3>Sobre Ignacio: </h3>
+                <img src="./dist/img/ignacio_slider.jpg" alt="Jose Ignacio Susaeta">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius dolores fugit dolorem natus vel eos aspernatur nihil neque laudantium, eveniet exercitationem esse laboriosam architecto, non accusantium sed quas, odit nostrum.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius dolores fugit dolorem natus vel eos aspernatur nihil neque laudantium, eveniet exercitationem esse laboriosam architecto, non accusantium sed quas, odit nostrum.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius dolores fugit dolorem natus vel eos aspernatur nihil neque laudantium, eveniet exercitationem esse laboriosam architecto, non accusantium sed quas, odit nostrum.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius dolores fugit dolorem natus vel eos aspernatur nihil neque laudantium, eveniet exercitationem esse laboriosam architecto, non accusantium sed quas, odit nostrum.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius dolores fugit dolorem natus vel eos aspernatur nihil neque laudantium, eveniet exercitationem esse laboriosam architecto, non accusantium sed quas, odit nostrum.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius dolores fugit dolorem natus vel eos aspernatur nihil neque laudantium, eveniet exercitationem esse laboriosam architecto, non accusantium sed quas, odit nostrum.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius dolores fugit dolorem natus vel eos aspernatur nihil neque laudantium, eveniet exercitationem esse laboriosam architecto, non accusantium sed quas, odit nostrum.
+                </p>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius dolores fugit dolorem natus vel eos aspernatur nihil neque laudantium, eveniet exercitationem esse laboriosam architecto, non accusantium sed quas, odit nostrum.
                 </p>
             </div>
             <!-- Third Page -->
+             <div class="third-page page animated fadeInRight" id="third-page">
+                <h3>Links con Información:</h3>
+                <div class="links-container">
+                    <a href="http://www.teledoce.com/programas/esta-boca-es-mia/nos-cruzamos-en-la-puerta-de-casa-le-dije-vas-a-demorar-y-me-respondio-no-no-ya-vengo/" class="item parent" target="_blank">
+                        <div class="image-container">
+                            <img src="./dist/img/news/news_1.jpg" alt="Entrevista Esta Boca es Mia">
+                        </div>
+                        <div class="info-container">
+                            <h4>
+                                Entrevista Esta Boca es Mia <span>(Canal 12)</span>
+                            </h4>
+                            <p>
+                                <strong>“Nos cruzamos en la puerta de casa, le dije: ¿vas a demorar? Y me respondió: no no, ya vengo”</strong><br>
+                            </p>
+                            <p>
+                                 En Esta Boca es Mía analizamos el caso de la desaparición de José Ignacio Susaeta. El joven salió hace cinco meses y medio de su casa y sus padres nunca más supieron de él.
+                            </p>
+                            <span class="go-link">
+                                Ir a la Noticia 
+                                <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                            </span>
+                        </div>
+                    </a>
+                    <a href="http://www.elpais.com.uy/informacion/dolor-larga-ausencia-ignacio-susaeta-desaparecido.html" class="item parent" target="_blank">
+                        <div class="image-container">
+                            <img src="./dist/img/news/news_2.jpg" alt="El dolor de una Gran ausencia (ElPais)">
+                        </div>
+                        <div class="info-container">
+                            <h4> El dolor de una larga ausencia <span>(ElPais)</span> </h4>
+                            <p>
+                                Los padres de Ignacio, Juan Susaeta y Alejandra Rodríguez buscan incansablemente a su hijo, que desapareció, dejando una carta que desconcertó a toda la familia. Mientras tanto, siguen planeando marchas y movilizaciones en todo el país; "lo vamos a buscar a donde sea" dijeron.
+                            </p>
+                            <span class="go-link">
+                                Ir a la Noticia 
+                                <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                            </span>
+                        </div>
+                    </a>
+                    <a href="http://www.montevideo.com.uy/auc.aspx?277141" class="item parent" target="_blank">
+                        <div class="image-container">
+                            <img src="./dist/img/news/news_3.jpg" alt="">
+                        </div>
+                        <div class="info-container">
+                            <h4>Los padres de Ignacio Susaeta hablaron sobre la carta que el joven dejó antes de desaparecer: “hay muchas cosas que no nos cierran”. <span>(Montevideo.com.uy)</span></h4>
+                            <p>
+                                Alejandra Rodríguez y Juan Susaeta, padres del joven desaparecido en enero pasado y cuya búsqueda no ha arrojado frutos hasta ahora, fueron entrevistados por el programa Viva la tarde, que emite Radio Sarandí.
+                            </p>
+                            <span class="go-link">
+                                Ir a la Noticia 
+                                <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                            </span>
+                        </div>
+                    </a>
+                     <a href="http://www.subrayado.com.uy/Site/noticia/47103/justicia-ordeno-difundir-fotos-y-buscar-a-jose-ignacio-susaeta" class="item parent" target="_blank">
+                        <div class="image-container">
+                            <img src="./dist/img/news/news_4.jpg" alt="Subrayado - Justicia ordenó difundir fotos y buscar a José Ignacio Susaeta ">
+                        </div>
+                        <div class="info-container">
+                            <h4>Justicia ordenó difundir fotos y buscar a José Ignacio Susaeta <span>(Subrayado)</span></h4>
+                            <p>
+                                El Juzgado de La Costa ordenó a la Policía de Canelones difundir las fotos de José Ignacio Susaeta Rodríguez, el joven de 23 años que desapareció el 23 de enero.
+                            </p>
+                            <span class="go-link">
+                                Ir a la Noticia 
+                                <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                            </span>
+                        </div>
+                    </a>
+                     <a href="http://elpaistv.com.uy/videos/a-diario/ignacio-susaeta-341" class="item parent" target="_blank">
+                        <div class="image-container">
+                            <img src="./dist/img/news/news_5.jpg" alt="ElPaisTV - Los padres de Ignacio Susaeta relataron el día en que desapareció y cómo se sienten.">
+                        </div>
+                        <div class="info-container">
+                            <h4>Los padres de Ignacio Susaeta relataron el día en que desapareció y cómo se sienten. <span>(ElPaisTV)</span></h4>
+                            <p>
+                            <span class="go-link">
+                                Ir a la Noticia 
+                                <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                            </span>
+                        </div>
+                    </a>
+                     <a href="https://www.riddle.com/a/3705" class="item parent" target="_blank">
+                        <div class="image-container">
+                            <img src="./dist/img/news/news_6.jpg" alt="Riddle - ¿Qué pasó con Ignacio Susaeta?">
+                        </div>
+                        <div class="info-container">
+                            <h4>¿Qué pasó con Ignacio Susaeta? <span>(Riddle)</span></h4>
+                            <p>
+                                Ignacio Susaeta salió de su hogar en auto, en la noche del viernes 23 de enero, rumbo a la casa de su novia. Nunca llegó. Desde ese día, nada más se supo sobre el joven de 23 años, aunque en estos últimos días la realización de una marcha impulsada por sus familiares y llamadas recibidas de personas que creen haberlo visto en distintas zonas del país, volvieron a poner la pregunta en el tapete: ¿dónde está Ignacio?
+                            </p>
+                            <span class="go-link">
+                                Ir a la Noticia 
+                                <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                            </span>
+                        </div>
+                    </a>
+                     <a href="http://www.canal10.com.uy/arriba-gente/2015/entrevista-con-los-padres-de-jose-ignacio-susaeta" class="item parent" target="_blank">
+                        <div class="image-container">
+                            <img src="./dist/img/news/news_7.jpg" alt="Canal 10 - Entrevista con los padres de José Ignacio Susaeta">
+                        </div>
+                        <div class="info-container">
+                            <h4>Entrevista con los padres de José Ignacio Susaeta <span>(Canal 10)</span></h4>
+                            <p>
+                                Seis meses van desde la desaparición de José Ignacio y aún no se tiene ningún tipo de información sobre él. Sus padres solicitan cualquier ayuda posible al respecto. Si tenes información comunicate al 099 204 546 o 099 632 477.
+                            </p>
+                            <span class="go-link">
+                                Ir a la Noticia 
+                                <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                            </span>
+                        </div>
+                    </a>
+                     <a href="" class="item parent" target="_blank">
+                        <div class="image-container">
+                            <img src="./dist/img/news/news_2.jpg" alt="">
+                        </div>
+                        <div class="info-container">
+                            <h4>A un año de la desaparición de Susaeta: ''No somos los mismos'', reflexiona su familia <span>(Montevideo.com.uy)</span></h4>
+                            <p>
+                                <strong>Tras cumplirse un año de la desaparición del joven José Ignacio Susaeta, su madre compartió una carta en las redes sociales: ''No somos los mismos''.</strong>
+                            </p>
+                            <p>
+                                Este sábado 23 de enero se cumplió un año desde que el joven José Ignacio Susaeta fue visto por última vez por su familia. Susaeta se fue de su casa afirmando que volvería pronto; pero nunca más volvió.
+                            </p>
+                            <span class="go-link">
+                                Ir a la Noticia 
+                                <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                            </span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-- Four Page -->
+             <div class="four-page page contacto animated fadeInRight" id="four-page">
+                <h3>Contacto:</h3>
+                <p>
+                    Los siguientes medios estan disponibles para comunicarte o dar informacion sobre Ignacio Susaeta: 
+                </p>
+                <ul>
+                    <li>
+                        <a href="tel:08009946">Telefono Personas Ausentes <i class="fa fa-phone-square" aria-hidden="true"></i> 0800 - 9946</a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/groups/1456645404650576/" target="_blank">
+                            Grupo de Facebook - Todos por Jose Ignacio Susaeta
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/Buscamos-a-Jose-Ignacio-Susaeta-659506377512944/?fref=ts" target="_blank">
+                             Grupo de Facebook - Buscamos a Jose Ignacio Susaeta
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://personasperdidas.org.ar/new/masInfo.php?persona=5734a630b17b6" target="_blank">
+                            PersonasPerdidas.org.ar - Información & Aportar Datos
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:personasausentes@minterior.gub.uy">
+                            Personas Ausentes Ministerio del Interior
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/Buscar_a_NachoS" target="_blank">
+                        Twitter @Buscar_a_NachoS
+                        </a>
+                    </li>
+                    <li>
+                        Telefonos Familia
+                        <a href="tel:+0059899204546"><i class="fa fa-phone-square" aria-hidden="true"></i> 099 204 546</a>
+                        -
+                        <a href="tel:+0059899632477"><i class="fa fa-phone-square" aria-hidden="true"></i> 099 204 546</a>
+                    </li>
+                </ul>
+                <div class="alert">
+                    <h3>Se agradece la Difusion en todos los medios.</h3>
+                </div>
+                <div class="message">
+                    <h3>Dejanos un Comentario: </h3>
+                    <div class="fb-comments" data-href="http://buscandoignacio.github.io/" data-width="100%" data-numposts="20"></div>
+                </div>
+            </div>
         </div>
     </div>
+    <!-- Footer -->
     <footer class="preLoader-on">
         <div class="container">
             <div class="social-container">

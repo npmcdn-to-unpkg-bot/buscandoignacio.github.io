@@ -13,6 +13,7 @@
 .carta{
     
 }
+// Info
 .info{
     .mapa{
         iframe{
@@ -43,6 +44,126 @@
             td{
                 border:none!important;   
             }            
+        }
+    }
+}
+// Links page
+.links-container{
+    .item{
+        display:table;
+        width:100%;
+        text-decoration: none;
+        color:#000;
+        line-height:1.5em;
+        border-bottom:2px dotted $green;
+        padding: 15px 0 15px 0;
+        &:last-child{
+            border:none;            
+        }
+    }
+    .image-container, .info-container{
+        display:table-cell;
+        vertical-align: middle;
+    }
+    .image-container{
+        padding-right:20px;
+        img{
+            max-width:280px;
+            height:auto;
+        }
+    }
+    .info-container{
+        h4{
+            font-size:1.4em;
+            text-align: center;
+            margin-top:0px;
+            span{
+                color:$green;
+                font-size:.8em;
+            }
+        }
+        .go-link{
+            display: block;
+            text-align: center;
+            font-style: italic;
+            font-size: .9em;
+            font-weight: bold;
+            i{
+                color:$green;
+                font-size: 1.6em;
+                position: relative;
+                top: 4px;
+                left: 10px;
+            }
+        }
+    }
+}
+
+// Contacto
+.contacto{
+    .message{
+    }
+    .alert{
+        background: $green;
+        color:#FFF;
+        padding:20px;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+    ul{
+        list-style: none;
+        padding: 0 20px;
+        li{
+            display: block;
+            margin: 5px 0;
+            background: $green;
+            color: #FFF;
+            padding: 15px 0;
+            text-align: center;
+            a{
+                color:#FFF;
+                text-decoration:none;
+            }
+        }
+    }
+}
+.main{
+    .page{
+        display:none;
+        &:first-child{
+            display: block;
+        }
+        &.show{
+            display:block;
+        }
+        &.hide{
+            display:none;
+        }
+    }
+}
+
+// Mobile 
+@media (max-width:$w-tablet){
+    .links-container{
+        .image-container, .info-container{
+            display:block;
+            vertical-align: middle;
+            text-align: center;
+        }
+        .image-container{
+            img{
+                max-width: 200px;
+                border-radius: 35%;
+            }    
+        }
+        .info-container{
+            h4{
+                margin:10px 0;
+            }
+            .go-link{
+                font-size:1.2em;
+            }
         }
     }
 }
