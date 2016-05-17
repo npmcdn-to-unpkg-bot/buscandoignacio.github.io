@@ -65,6 +65,9 @@ html, body {
         font-size: .8em;
         cursor: pointer; }
 
+.preLoader .container .info img {
+  max-width: 150px; }
+
 header {
   background: #FFF;
   border-bottom: 2px solid #3c948b; }
@@ -97,11 +100,16 @@ header {
     float: none;
     text-align: center; }
   header .menu-container {
-    width: 100%; }
+    width: 100%;
+    height: auto; }
+  header .logo img {
+    padding: 5px 0 5px 5px; }
   header .menu {
     width: 100%; }
-    header .menu ul li {
-      display: block; } }
+    header .menu ul {
+      padding: 0px; }
+      header .menu ul li {
+        display: block; } }
 
 footer {
   background: #3c948b;
