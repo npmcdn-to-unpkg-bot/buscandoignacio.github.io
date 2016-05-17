@@ -1,4 +1,7 @@
 // Animations
 .preLoader-on{
-    display:none;
+    opacity:0;
+}
+.preloader-ison{
+    overflow: hidden;
 }
