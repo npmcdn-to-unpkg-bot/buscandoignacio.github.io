@@ -161,7 +161,7 @@ header {
     width: 100%;
     height: auto; }
   header .logo img {
-    padding: 5px 0 5px 5px; }
+    padding: 5px 0 5px 0px; }
   header .menu {
     width: 100%; }
     header .menu ul {
