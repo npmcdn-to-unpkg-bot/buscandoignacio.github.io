@@ -1,14 +1,15 @@
 (function($){
+    // Global Variables
+    var ua      = navigator.userAgent,
+        event   = (ua.match(/iPad/i)) ? "touchstart" : "click"; 
     
     // Functions
     var loadPage = function(){
         var $this   = $(this),
             $pages  = $('.page'),
             $link   = $this.attr('data-link');
+           
         
-        // $pages.fadeOut('slow', function(){
-        //    $('#'+$link).show(); 
-        // });
         if( !$('#'+$link).hasClass('show') ){
             $pages.addClass('hide');
             $pages.removeClass('show');
@@ -33,8 +34,8 @@
     
     // Document Ready
     $(document).ready(function(){
-        $('.menubtn').on('click touchstart', loadPage) ;
-        $('#preloaderBtn').on('click touchstart', hiddeLoader);
+        $('.menubtn').bind(event, loadPage) ;
+        $('#preloaderBtn').bind(event, hiddeLoader);
     });
     
         
