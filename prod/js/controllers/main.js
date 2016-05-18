@@ -33,8 +33,8 @@
     
     // Document Ready
     $(document).ready(function(){
-        $('.menubtn').on('click', loadPage) ;
-        $('#preloaderBtn').on('click', hiddeLoader);
+        $('.menubtn').on('click touchstart', loadPage) ;
+        $('#preloaderBtn').on('click touchstart', hiddeLoader);
     });
     
         
