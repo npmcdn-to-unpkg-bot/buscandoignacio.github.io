@@ -37,7 +37,8 @@ img {
     font-size: 12px; } }
 
 .preLoader-on {
-  opacity: 0; }
+  opacity: 0;
+  display: none; }
 
 .preloader-ison {
   overflow: hidden;
