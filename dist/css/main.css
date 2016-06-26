@@ -37,8 +37,7 @@ img {
     font-size: 12px; } }
 
 .preLoader-on {
-  opacity: 0;
-  display: none; }
+  opacity: 0; }
 
 .preloader-ison {
   overflow: hidden;
@@ -186,12 +185,36 @@ footer {
     display: inline-block;
     margin: 0 10px; }
 
+.bigbum {
+  margin-top: -20px; }
+  .bigbum img {
+    border-radius: 0px 0px 20px 20px;
+    border-top: none; }
+
 .main {
   max-width: 1024px;
   padding: 20px;
   margin: 0 auto; }
   .main .container {
     position: relative; }
+
+.carta .carta-item {
+  background: #f7f6f6;
+  padding: 10px 20px;
+  color: #000;
+  border-bottom: 2px solid #e2e1e1;
+  line-height: 1.6em; }
+  .carta .carta-item:nth-child(even) {
+    background: #efebeb; }
+  .carta .carta-item:last-child {
+    border-bottom: none; }
+  .carta .carta-item .title {
+    display: inline-block;
+    background: #3c948b;
+    color: #FFF;
+    padding: 10px 20px;
+    margin-left: -20px;
+    margin-bottom: 0; }
 
 .info .mapa iframe {
   border: none; }

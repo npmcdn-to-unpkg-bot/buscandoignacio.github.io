@@ -1,4 +1,11 @@
 // Main
+.bigbum{
+    margin-top:-20px;
+    img{
+        border-radius: 0px 0px 20px 20px;
+        border-top: none;
+    }
+}
 .main{
     max-width:$w-desktop;
     padding: $p-desktop;
@@ -11,7 +18,27 @@
     }
 }
 .carta{
-    
+    .carta-item{
+        background: #f7f6f6;
+        padding: 10px 20px;
+        color: #000;        
+        border-bottom:2px solid #e2e1e1;
+        line-height:1.6em;
+        &:nth-child(even){
+            background: #efebeb;
+        }        
+        &:last-child{
+            border-bottom:none;
+        }
+        .title{
+            display: inline-block;
+            background: $green;
+            color: #FFF;
+            padding: 10px 20px;
+            margin-left: -20px;
+            margin-bottom: 0;
+        }
+    }
 }
 // Info
 .info{
