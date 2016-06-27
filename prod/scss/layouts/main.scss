@@ -6,6 +6,13 @@
         border-top: none;
     }
 }
+.galery{
+    margin:0 auto;
+    .galery-item{
+        width:auto;
+        max-width: 250px;
+    }
+}
 .main{
     max-width:$w-desktop;
     padding: $p-desktop;

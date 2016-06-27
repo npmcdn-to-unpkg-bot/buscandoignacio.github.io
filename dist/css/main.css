@@ -191,6 +191,12 @@ footer {
     border-radius: 0px 0px 20px 20px;
     border-top: none; }
 
+.galery {
+  margin: 0 auto; }
+  .galery .galery-item {
+    width: auto;
+    max-width: 250px; }
+
 .main {
   max-width: 1024px;
   padding: 20px;
