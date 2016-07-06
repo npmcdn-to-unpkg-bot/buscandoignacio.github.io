@@ -1,0 +1,53 @@
+.form{
+    max-width:400px;
+    padding:30px 0;
+    margin:0 auto;
+    box-sizing: border-box;
+    form{
+        box-sizing: border-box;
+    }
+    input, textarea{
+        display:block;
+        max-width:400px;
+        margin:0 0 10px 0;
+        padding:10px;
+        width:100%;
+        box-sizing: border-box;
+        &:focus{
+            outline:none;
+        }
+    }
+    input{
+        border:none;
+        border-bottom:2px solid $green-2;
+    }
+    textarea{
+        resize:none;
+        border-color:$green-2;
+        border-bottom:2px solid $green-3;
+    }
+    .submit{
+        background-color:$green-2;
+        color:#FFF;
+        cursor:pointer;
+        &:hover{
+            transition:.5s all ease-in-out;
+            background-color:$green-3;
+        }
+    }
+    label{
+        display: block;
+        padding: 5px 10px 10px;
+        color: #767676;
+    }
+}
+.form-respond{
+    text-align:center;
+    font-size:2em;
+    &.success{
+        color:$green-2;
+    }
+    &.error{
+        color:red;
+    }
+}

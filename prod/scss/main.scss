@@ -15,6 +15,12 @@
 
 /*** Plugins ***/
 @import 'plugins/fontawesome/scss/font-awesome';
+@import 'plugins/photoswipe/photoswipe';
+@import 'plugins/photoswipe/default-skin';
+
+/*** Components ***/
+@import 'components/alerts';
+@import 'components/form';
 
 // reset
 @import 'framework/reset';

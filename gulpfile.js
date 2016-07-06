@@ -42,17 +42,22 @@ gulp.task('css', function(){
 });
 // - JS
 gulp.task('js', function(){
-    return gulp.src( prod + 'js/**/*.js')
+    return gulp.src(prod + 'js/!(plugins)**/*.js')
             .pipe(jshint())
             .pipe(jshint.reporter('default'))
             .pipe(concat('main.js'))
             .pipe(gulp.dest(dest + 'js/'));
 });
+gulp.task('plugins-js',function(){
+    return gulp.src(prod + 'js/plugins/**/*.js')
+        .pipe(concat('plugins.js'))
+        .pipe(gulp.dest(dest + 'js/'));
+});
 // - Watch
 gulp.task('watch', ['browser-sync'], function(){
     gulp.watch( prod + 'scss/**/*', ['css'] );
-    gulp.watch( prod + 'js/**/*.js', ['js','browser-sync-reload']);
+    gulp.watch( prod + 'js/**/*.js', ['js','plugins-js','browser-sync-reload']);
 });
 // - Default
-gulp.task('default',['css','js'] );
+gulp.task('default',['css','js','plugins-js'] );
 
